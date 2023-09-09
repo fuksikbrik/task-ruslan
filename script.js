@@ -8,7 +8,6 @@ let func = function (){
     textFromSlide.forEach(item => {
         console.log(item.offsetHeight);
        if(item.offsetHeight >= 80){
-       
         let ahtung = document.createElement('button')
         ahtung.innerHTML = `<img src="./dots.svg" alt="">`;
         item.appendChild(ahtung)
@@ -18,20 +17,6 @@ let func = function (){
         })
        }
     })
-
-
-
-
-
-
-    // sliderItem.forEach(item => {
-    //     if(item.offsetHeight >= 200){
-    //     let ahtung = document.createElement('button')
-    //     ahtung.innerHTML = `Открыть`;
-    //     item.appendChild(ahtung)
-    //     ahtung.classList.add('btns')
-    //     }
-    // });
 };
 func();
 
